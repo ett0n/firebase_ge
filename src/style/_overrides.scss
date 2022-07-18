@@ -1,0 +1,8 @@
+@layer base {
+}
+
+@layer components {
+  .input-cus {
+    @apply input input-bordered w-full block;
+  }
+}
