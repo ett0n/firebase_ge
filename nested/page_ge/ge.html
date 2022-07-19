@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My evaluations</title>
+    <link rel="stylesheet" href="../../src/style/main.scss" />
+  </head>
+  <body>
+    <header class="bg-base-300 flex justify-center">
+      <div class="navbar w-8/12">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            </label>
+            <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-300 rounded-box w-52">
+              <li><a>My GE</a></li>
+              <li><a href="index.html">Item 3</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost normal-case text-xl">ProjectGE</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal p-0">
+            <li class="bg-primary-focus"><a>My GE</a></li>
+            <li><a href="../page_admin/admin.html">Admin</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <section id="whenSignedOut" class="flex">
+            <a class="btn" id="login">Login</a>
+          </section>
+          <section id="whenSignedIn" class="hidden items-center gap-x-4">
+            <div id="user-details" class="self-center"></div>
+            <a class="btn btn-secondary" id="logout">Sign out</a>
+          </section>
+        </div>
+      </div>
+    </header>
+
+    <!-- main start -->
+    <main class="m-10 mt-10 flex flex-col items-center">
+      <div class="ge_title"></div>
+      <div>
+        <canvas id="myChart"></canvas>
+      </div>
+    </main>
+    <script type="module" src="ge.ts"></script>
+  </body>
+</html>
