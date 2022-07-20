@@ -61,7 +61,6 @@ onAuthStateChanged(auth, (user) => {
 const querySnapshot = await getDocs(collection(db, "ge"));
 querySnapshot.forEach((doc) => {
   console.log(`${doc.id} => ${doc.data()}`);
-  dataPrint.innerHTML += doc.data().name;
   console.log(doc.data().attempt);
 });
 

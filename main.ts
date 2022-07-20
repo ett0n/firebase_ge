@@ -35,6 +35,5 @@ if (login !== null) {
 onAuthStateChanged(auth, (user) => {
   if (user) {
     location.replace("./nested/page_ge/ge.html");
-  } else {
   }
 });
